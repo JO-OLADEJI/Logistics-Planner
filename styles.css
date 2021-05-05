@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #131C21;
+  --light-background: #323739;
+  --blue-theme: #28A2CE;
+}
+
+::-webkit-scrollbar {
+  background: var(--background);
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue-theme);
+  border-radius: 3px;
+}
+
+#Intro {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.bike-image img {
+  width: 15rem;
+}
+
+.bike-image {
+  margin-bottom: 3rem;
+}
+
+.progress-bar-outline {
+  height: .5rem;
+  width: 27rem;
+  background-color: var(--light-background);
+}
+
+.progress-bar-body {
+  height: .5rem;
+  background-color: var(--blue-theme);
+  animation: fillup 2s ease-in-out forwards;
+}
+
+@keyframes fillup {
+  from {
+    width: 0;
+  }
+  to {
+    width: 27rem;
+  }
+}
+
+#Home {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr;
+  gap: .5rem;
+  display: none;
+}
+
+#DeliveryList {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  position: relative;
+}
+
+#Planner {
+  grid-column: 3 / 10;
+  grid-row: 1 / 2;
+}
+
+.title {
+  color: var(--blue-theme);
+  text-align: center;
+}
+
+.title h3 {
+  background-color: var(--light-background);
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .5rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--blue-theme);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title i {
+  margin-left: .5rem;
+}
+
+.list {
+  height: 90vh;
+  margin-top: .5rem;
+  overflow: auto;
+}
+
+.OrderCard {
+  background-color: #3e8bf0;
+  color: white;
+  margin: .7rem .3rem;
+  font-weight: normal;
+  border-radius: 1rem;
+  padding: .5rem;
+  cursor: move;
+  border: 1px solid var(--blue-theme);
+  max-width: 18rem;
+}
+
+.OrderCard i {
+  font-size: .8rem;
+  margin-right: .5rem;
+  color: var(--background);
+}
+
+.OrderCard h4,
+.OrderCard p {
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.OrderCard p {
+  font-weight: 400;
+  margin-left: .2rem;
+}
+
+.seperation-bar {
+  border-top: 1px solid var(--blue-theme);
+}
+
+.DayCalendar {
+  padding-right: .7rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3rem;
+  margin-left: .3rem;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right {
+  color: var(--blue-theme);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.right h1 {
+  font-size: 4rem;
+}
+
+.dragging {
+  opacity: 0.5;
+}

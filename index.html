@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" description="Joshua Oladeji">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Logistics Planner</title>
+  </head>
+  <body>
+
+    <div id="Intro">
+      <div class="bike-image">
+        <img src="./assets/delivery-bike.svg" alt=""/>
+      </div>
+      <div class="progress-bar-outline">
+        <div class="progress-bar-body"></div>
+      </div>
+    </div>
+
+    <div id="Home" class="hide">
+
+      <div id="DeliveryList">
+        <div class="title">
+          <h3>Orders <i class="fas fa-tasks"></i></h3>
+        </div>
+        <div id="order-list" class="list">
+          <!-- dynamic JavaScript -->
+        </div>
+      </div>
+
+      <div id="Planner">
+        <div class="title">
+          <h3>Planner <i class="far fa-calendar-alt"></i></h3>
+        </div>
+        <div id="schedule-list" class="list">
+          <div class="DayCalendar">
+            <div id="box1" class="flex">
+              <div class="left"><!-- dynamic JavaScript --></div>
+              <div class="right flex">
+                <h1 id="date1"></h1>
+                <div class="column-flex">
+                  <h3 id="dayOfWeek1"></h3>
+                  <p id="month1"></p>
+                </div>
+              </div>
+            </div>
+            <div class="seperation-bar"></div>
+          </div>
+
+          <div class="DayCalendar">
+            <div id="box2" class="flex">
+              <div class="left"><!-- dynamic JavaScript --></div>
+              <div class="right flex">
+                <h1 id="date2"></h1>
+                <div class="column-flex">
+                  <h3 id="dayOfWeek2"></h3>
+                  <p id="month2"></p>
+                </div>
+              </div>
+            </div>
+            <div class="seperation-bar"></div>
+          </div>
+
+          <div class="DayCalendar">
+            <div id="box3" class="flex">
+              <div class="left"><!-- dynamic JavaScript --></div>
+              <div class="right flex">
+                <h1 id="date3"></h1>
+                <div class="column-flex">
+                  <h3 id="dayOfWeek3"></h3>
+                  <p id="month3"></p>
+                </div>
+              </div>
+            </div>
+            <div class="seperation-bar"></div>
+          </div>
+          
+          <div class="DayCalendar">
+            <div id="box4" class="flex">
+              <div class="left"><!-- dynamic JavaScript --></div>
+              <div class="right flex">
+                <h1 id="date4"></h1>
+                <div class="column-flex">
+                  <h3 id="dayOfWeek4"></h3>
+                  <p id="month4"></p>
+                </div>
+              </div>
+            </div>
+            <div class="seperation-bar"></div>
+          </div>
+
+          <div class="DayCalendar">
+            <div id="box5" class="flex">
+              <div class="left"><!-- dynamic JavaScript --></div>
+              <div class="right flex">
+                <h1 id="date5"></h1>
+                <div class="column-flex">
+                  <h3 id="dayOfWeek5"></h3>
+                  <p id="month5"></p>
+                </div>
+              </div>
+            </div>
+            <div class="seperation-bar"></div>
+          </div>
+
+          <div class="DayCalendar">
+            <div id="box6" class="flex">
+              <div class="left"><!-- dynamic JavaScript --></div>
+              <div class="right flex">
+                <h1 id="date6"></h1>
+                <div class="column-flex">
+                  <h3 id="dayOfWeek6"></h3>
+                  <p id="month6"></p>
+                </div>
+              </div>
+            </div>
+            <div class="seperation-bar"></div>
+          </div>
+
+          <div class="DayCalendar">
+            <div id="box7" class="flex">
+              <div class="left"><!-- dynamic JavaScript --></div>
+              <div class="right flex">
+                <h1 id="date7"></h1>
+                <div class="column-flex">
+                  <h3 id="dayOfWeek7"></h3>
+                  <p id="month7"></p>
+                </div>
+              </div>
+            </div>
+            <div class="seperation-bar"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
